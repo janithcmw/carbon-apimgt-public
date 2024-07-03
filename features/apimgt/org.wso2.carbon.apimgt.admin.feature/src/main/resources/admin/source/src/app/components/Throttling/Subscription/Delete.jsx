@@ -49,11 +49,11 @@ function Delete(props) {
                 );
             })
             .catch(() => {
-                return (
+                Alert.error(
                     <FormattedMessage
                         id='Throttling.Subscription.Policy.policy.delete.error'
                         defaultMessage='Subscription Rate Limiting Policy could not be deleted.'
-                    />
+                    />,
                 );
             });
 
